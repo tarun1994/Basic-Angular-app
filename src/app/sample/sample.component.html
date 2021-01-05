@@ -1,0 +1,23 @@
+<div class="container">
+    <div id="spinner" *ngIf="showSpinner">
+        <img class="center" src="../../assets/Spinner.gif" />
+      </div>
+    <div *ngIf="!isShow">
+    <ul class="list-ul list-item list-hover">
+        <li>
+            <h2>Users List</h2>
+        </li>
+        <li   *ngFor="let info of userInfo">
+            <div class="row list-item">
+            <label class="ml10">{{info.title}}</label>
+            <button  class="mr10 show-button" (click)="navigate(info.id)">
+                Show
+            </button>
+                </div>
+        </li>
+    </ul>
+    </div>
+    <div *ngIf="isShow">
+    <router-outlet></router-outlet>
+    </div>
+</div>

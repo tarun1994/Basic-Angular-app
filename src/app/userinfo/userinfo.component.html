@@ -1,0 +1,46 @@
+<div id="spinner" *ngIf="showSpinner">
+    <img class="center" src="../../assets/Spinner.gif" />
+</div>
+<div *ngIf="!showSpinner">
+    <ul class="list-ul">
+        <li>
+            <h2>User Information</h2>
+        </li>
+        <li>
+            <div class="row list-item">
+                <div class="col-12">
+                    <label class="col-2">UserId:</label>
+                    <label class="col-10">{{userData.userId}}</label>
+                </div>
+            </div>
+        </li>
+        <li>
+            <div class="row list-item">
+
+                <div class="col-12">
+                    <label class="col-2">Id:</label>
+                    <label class="col-10">{{userData.id}}</label>
+                </div>
+            </div>
+
+        </li>
+        <li>
+            <div class="row list-item">
+
+                <div class="col-12">
+                    <label class="col-2">Title:</label>
+                    <label class="col-10">{{userData.title}}</label>
+                </div>
+            </div>
+        </li>
+        <li>
+            <div class="row list-item">
+
+                <div class="col-12">
+                    <label class="col-2">Body:</label>
+                    <label class="col-10">{{userData.body}}</label>
+                </div>
+            </div>
+        </li>
+    </ul>
+</div>

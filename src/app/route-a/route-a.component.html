@@ -1,0 +1,7 @@
+<p>route-a works!</p>
+<input [value]="val" (input)="val = $event.target.value"/>
+<nav>
+    <a (click)="navigate()"
+    >navigate</a>
+  </nav>
+<router-outlet></router-outlet>
